@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="11">
+      <module name="DemoModules.app" target="17" />
+      <module name="DemoModules.buildSrc" target="17" />
+      <module name="DemoModules.buildSrc.main" target="17" />
+      <module name="DemoModules.buildSrc.test" target="17" />
+      <module name="DemoModules.core" target="17" />
+      <module name="DemoModules.feature-dashboard" target="17" />
+      <module name="DemoModules.feature-home.data" target="17" />
+      <module name="DemoModules.feature-home.data-remote" target="17" />
+      <module name="DemoModules.feature-home.presentation" target="17" />
+      <module name="DemoModules.feature-notifications" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
