@@ -1,9 +1,34 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
-    <style name="Base.Theme.DemoModular" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.DemoModular" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.DemoModular" parent="Base.Theme.DemoModular" />
+    <style name="Theme.TestEnverfit" parent="Base.Theme.DemoModular" />
+
+    <style name="AppTheme.TextView" parent="" />
+
+    <style name="AppTheme.TextView.Title" parent="AppTheme.TextView">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_item_exercise_color</item>
+    </style>
+
+    <style name="AppTheme.TextView.Desc" parent="AppTheme.TextView">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_item_exercise_color</item>
+    </style>
+
+    <style name="AppTheme.TextView.DayOfWeek" parent="AppTheme.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/text_day_of_week_color</item>
+    </style>
+
+    <style name="AppTheme.TextView.DayOfMonth" parent="AppTheme.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_day_of_week_color</item>
+    </style>
 </resources>
