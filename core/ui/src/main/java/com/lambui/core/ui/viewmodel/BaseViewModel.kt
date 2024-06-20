@@ -1,6 +1,5 @@
 package com.lambui.core.ui.viewmodel
 
-import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableSharedFlow
