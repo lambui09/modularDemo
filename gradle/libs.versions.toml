@@ -1,5 +1,9 @@
 [versions]
 agp = "8.3.1"
+compiler = "4.13.1"
+compilerVersion = "4.13.1"
+glide = "4.14.2"
+glidepalette = "2.1.2"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -10,12 +14,20 @@ kotlinxCoroutinesCore = "1.7.3"
 material = "1.12.0"
 activity = "1.8.0"
 constraintlayout = "2.1.4"
+moshiKotlin = "1.15.1"
 retrofit = "2.9.0"
+timber = "5.0.1"
 
 [libraries]
 androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+glide-annotations = { module = "com.github.bumptech.glide:annotations", version.ref = "glide" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "compiler" }
+compiler-v480 = { module = "com.github.bumptech.glide:compiler", version.ref = "compilerVersion" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+glidepalette = { module = "com.github.florent37:glidepalette", version.ref = "glidepalette" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -25,7 +37,9 @@ kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-c
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshiKotlin" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

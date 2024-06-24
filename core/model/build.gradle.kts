@@ -1,13 +1,10 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsKotlinAndroid)
-    id("com.google.dagger.hilt.android") version "2.47" apply false
-    id("kotlin-parcelize")
-    kotlin("kapt")
 }
 
 android {
-    namespace = "com.lambui.core.ui"
+    namespace = "com.lambui.model"
     compileSdk = 34
 
     defaultConfig {
@@ -33,22 +30,21 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    buildFeatures {
-        viewBinding = true
-    }
 }
 
 dependencies {
     implementation(project(":core:model"))
-    implementation(project(":core:common"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation(libs.retrofit)
     implementation(libs.converter.gson)
-    // Hilt
-    implementation("com.google.dagger:hilt-android:2.47")
-    kapt("com.google.dagger:hilt-android-compiler:2.47")
-    implementation("androidx.fragment:fragment-ktx:1.5.5")
+    // Moshi
+    implementation(libs.moshi.kotlin)
+    // Retrofit
+    implementation(libs.converter.moshi)
+    // Timber
+    implementation(libs.timber)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

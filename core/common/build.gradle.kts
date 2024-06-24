@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    kotlin("kapt")
 }
 
 android {
@@ -33,10 +34,20 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    //moshi
+    implementation(libs.moshi.kotlin)
+    //gson
+    implementation(libs.converter.gson)
+    implementation("androidx.fragment:fragment-ktx:1.5.5")
+    // Glide
+    implementation(libs.glide)
+    kapt(libs.compiler.v480)
+    kapt(libs.glide.annotations)
+    annotationProcessor(libs.compiler)
+    kapt(libs.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

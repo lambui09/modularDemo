@@ -4,9 +4,19 @@ import android.app.ProgressDialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.ViewModelLazy
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.viewbinding.ViewBinding
+import com.lambui.common.extension.boolean.isNotTrue
+import com.lambui.common.extension.boolean.isTrue
+import com.lambui.common.extension.string.toIntOrZero
+import com.lambui.common.extension.widget.dialog
 import com.lambui.core.ui.viewmodel.BaseViewModel
+import com.lambui.model.network.AppErrors
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.launch
 import java.net.HttpURLConnection
 import kotlin.reflect.KClass
 
