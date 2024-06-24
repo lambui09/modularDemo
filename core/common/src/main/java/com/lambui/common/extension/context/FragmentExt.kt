@@ -9,7 +9,6 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.lambui.common.R
-import com.thuanpx.mvvm_architecture.R
 import com.lambui.common.extension.AnimationType
 import com.lambui.common.extension.FADE
 import com.lambui.common.extension.SLIDE_DOWN
